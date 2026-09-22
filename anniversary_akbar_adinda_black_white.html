@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Dedekkk 🤍</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,sans-serif;
+  color:#fff;
+  background:#000;
+  overflow-x:hidden;
+}
+#opening{
+  position:fixed;inset:0;z-index:10;
+  display:flex;align-items:center;justify-content:center;
+  background:#000;
+  transition:1s;
+}
+.open-box{text-align:center;padding:30px}
+.open-heart{font-size:90px;animation:pulse 1.2s infinite}
+.open-box h1{font-size:30px;margin:15px 0}
+.open-box p{color:#ddd}
+button{
+  border:1px solid #fff;border-radius:30px;padding:14px 28px;
+  background:#fff;color:#000;font-weight:bold;font-size:15px;
+  cursor:pointer;box-shadow:0 0 20px #fff5;transition:.3s
+}
+button:hover{transform:scale(1.08);box-shadow:0 0 30px #fff9}
+@keyframes pulse{50%{transform:scale(1.2)}}
+
+#content{display:none}
+section{
+  min-height:100vh;display:flex;align-items:center;
+  justify-content:center;padding:35px 20px;
+}
+.card{
+  width:min(92%,520px);padding:35px 25px;border-radius:30px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.2);
+  box-shadow:0 0 35px rgba(255,255,255,.08);
+  text-align:center;backdrop-filter:blur(8px);
+}
+.big-heart{font-size:75px;animation:pulse 1.3s infinite}
+h1{font-size:32px;margin:12px 0}
+h2{font-size:20px;margin-bottom:12px}
+.date{font-size:14px;color:#ccc;margin-bottom:25px}
+.intro{line-height:1.8;font-size:16px;color:#eee}
+#letter{
+  display:none;text-align:left;margin-top:25px;
+  animation:appear .8s ease
+}
+#letter p{line-height:1.85;font-size:15px;margin-bottom:18px;color:#eee}
+.center{text-align:center}
+.end{font-size:25px;font-weight:bold;margin-top:20px;color:#fff}
+.note{font-size:12px;color:#aaa;margin-top:12px}
+
+#stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+#canvas{position:fixed;inset:0;pointer-events:none;z-index:5}
+@keyframes appear{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<div id="opening">
+  <div class="open-box">
+    <div class="open-heart">🤍</div>
+    <h1>Untuk Dedekkk</h1>
+    <p>Akbar punya sesuatu buat kamu...</p>
+    <br>
+    <button onclick="openLove()">Buka 🤍</button>
+  </div>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<div id="content">
+<section>
+<div class="card">
+
+  <div class="big-heart">🤍</div>
+  <h1>Happy 1st Anniversary</h1>
+  <h2>Akbar ❤️ Adinda Fitria Rahmadhani</h2>
+  <div class="date">22 September 2025 — 22 September 2026</div>
+
+  <p class="intro">
+    Nggak kerasa yaa dedekkk, kita udah satu tahun.
+    Terima kasih sudah bertahan dan menemani Akbar sampai hari ini. 🤍
+  </p>
+
+  <br>
+  <button onclick="openLetter()">💌 Buka suratnya</button>
+  <div class="note">♡ made with love by Akbar</div>
+
+  <div id="letter">
+    <p>Happy anniversary 1 tahun yaa dedekkk🤍🤍🤍</p>
+
+    <p>Ndaa kerasa banget ya kita udah satu tahun. satu tahun bareng kamu ternyata banyak banget ceritanya. dari yang awalnya cuma saling kenal, terus makin deket, sampai akhirnya bisa sejauh ini sama kamu.</p>
+
+    <p>makasih yaa udah tetap bertahan sama aku sampai sekarang. makasih udah sabar ngadepin aku, sabar sama sifat aku, dan masih mau sayang sama aku walaupun aku sering bikin salah dan kadang bikin kamu kesel.</p>
+
+    <p>aku sadar aku masih jauh dari kata sempurna buat kamu. masih banyak hal yang harus aku perbaiki dari diri aku. tapi aku bener-bener mau belajar, karena aku nggak mau kehilangan kamu cuma gara-gara kesalahan yang sebenarnya masih bisa aku perbaiki.</p>
+
+    <p>aku sayang banget sama kamu. bahkan kadang aku sendiri bingung kenapa bisa sesayang ini sama seseorang. aku nggak tahu perjalanan kita ke depannya bakal kayak gimana, tapi aku berharap kita masih bisa terus bareng.</p>
+
+    <p>semoga kita bisa sama-sama belajar buat lebih ngerti satu sama lain, lebih sabar, dan nggak gampang nyerah cuma karena masalah kecil.</p>
+
+    <p>pokoknya aku bersyukur banget bisa kenal dan punya kamu sampai hari ini.</p>
+
+    <p><b>happy 1st anniversary, dedekkk 🤍</b></p>
+
+    <p>semoga satu tahun ini bukan cuma jadi kenangan, tapi jadi awal dari banyak tahun yang bakal kita lewatin bareng-bareng.</p>
+
+    <p>aku sayang kamu, hari ini, besok, dan selama kamu masih mau jalan bareng aku.🤍🤍🤍</p>
+
+    <div class="center">
+      <div class="end">Akbar ♡ Dedekkk</div>
+      <p>22 September 2026</p>
+    </div>
+  </div>
+
+</div>
+</section>
+</div>
+
+<script>
+/* Bintang putih kecil */
+const stars=document.getElementById("stars");
+const sctx=stars.getContext("2d");
+let dots=[];
+function resize(){
+  stars.width=innerWidth;stars.height=innerHeight;
+  dots=Array.from({length:100},()=>({
+    x:Math.random()*innerWidth,y:Math.random()*innerHeight,
+    r:Math.random()*1.5+.3,a:Math.random()
+  }));
+}
+resize();addEventListener("resize",resize);
+function drawStars(){
+  sctx.clearRect(0,0,stars.width,stars.height);
+  dots.forEach(d=>{
+    d.a+=.02;
+    sctx.globalAlpha=.25+Math.abs(Math.sin(d.a))*.65;
+    sctx.fillStyle="#fff";
+    sctx.beginPath();sctx.arc(d.x,d.y,d.r,0,Math.PI*2);sctx.fill();
+  });
+  requestAnimationFrame(drawStars);
+}
+drawStars();
+
+/* Love putih beterbangan */
+const canvas=document.getElementById("canvas"),ctx=canvas.getContext("2d");
+let hearts=[];
+function resize2(){canvas.width=innerWidth;canvas.height=innerHeight}
+resize2();addEventListener("resize",resize2);
+
+function spawn(n=1){
+  for(let i=0;i<n;i++){
+    hearts.push({
+      x:Math.random()*canvas.width,
+      y:canvas.height+30,
+      size:12+Math.random()*25,
+      speed:.7+Math.random()*1.8,
+      drift:Math.random()*2-1,
+      opacity:.3+Math.random()*.7
+    });
+  }
+}
+function animate(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  hearts.forEach(h=>{
+    h.y-=h.speed;
+    h.x+=Math.sin(h.y/40)*h.drift;
+    ctx.globalAlpha=h.opacity;
+    ctx.font=h.size+"px Arial";
+    ctx.fillStyle="#fff";
+    ctx.fillText("♡",h.x,h.y);
+  });
+  hearts=hearts.filter(h=>h.y>-50);
+  requestAnimationFrame(animate);
+}
+animate();
+setInterval(()=>spawn(2),450);
+
+function openLove(){
+  document.getElementById("opening").style.opacity="0";
+  setTimeout(()=>{
+    document.getElementById("opening").style.display="none";
+    document.getElementById("content").style.display="block";
+    spawn(35);
+  },900);
+}
+function openLetter(){
+  document.getElementById("letter").style.display="block";
+  spawn(50);
+}
+</script>
+</body>
+</html>
